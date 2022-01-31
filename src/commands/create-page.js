@@ -1,12 +1,12 @@
 module.exports = {
     name: "create:screen",
-    alis: "cs",
-    description: "Cria uma nova tela em src/screens",
+    alias: "cp",
+    description: "Cria uma nova página em src/pages",
     run: async toolbox => {
         const { parameters, createComponent } = toolbox
 
         const componentName = parameters.first
 
-        await createComponent("src/screens", componentName)
+        await createComponent("src/pages", componentName)
     }
 }

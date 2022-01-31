@@ -11,7 +11,7 @@ module.exports = (toolbox) => {
             const styleTemplate = await isRN() ? "styles-rn.js.ejs" : "styles-rjs.js.ejs"
 
             if (!componentName) {
-                error("Please, a name must be specified")
+                error("Um nome para o componente deve ser especificado.")
                 return
             } else {
                 await template.generate({

@@ -1,8 +1,9 @@
 module.exports = {
     name: "create:component",
-    description: "Create a new component into src/components",
+    alias: "cc",
+    description: "Cria um novo componente em src/components",
     run: async toolbox => {
-        const {parameters, createComponent} = toolbox
+        const { parameters, createComponent } = toolbox
 
         const componentName = parameters.first
 

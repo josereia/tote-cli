@@ -1,11 +1,13 @@
 import React from "react"
 
-import {Container} from "./styles.js"
+import {Container, Text} from "./styles.js"
 
 export default function <%= props.componentName %>() {
     return(
         <Container>
-            
+            <Text>
+                Componente <%= props.componentName %> criado com sucesso!
+            </Text>
         </Container>
     )
 }
